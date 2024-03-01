@@ -75,7 +75,7 @@ for (i in 1:length(files)){
 	}else{
 		targetedSequences <- NULL
 	}
-	normal_counts <- loadReadCountsFromWig(normal_reads, chrs=chrs, gc=gc, map=map, 
+	normal_counts <- loadReadCountsFromWig(normal_reads, chrs=chrs, chrNormalize=chrNormalize, gc=gc, map=map, genomeStyle=genomeStyle,
 					centromere=centromere, targetedSequences=targetedSequences)
 	
 	gender <- normal_counts$gender
